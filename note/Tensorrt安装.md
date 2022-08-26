@@ -4,7 +4,7 @@
 NVIDIA ® TensorRT™ 的核心是一个 C++ 库，有助于在 NVIDIA 图形处理单元 (GPU) 上进行高性能推理。TensorRT基于一个已训练的网络（网络结构定义+训练后权重参数）构建出一个高度优化的推理引擎，执行推理任务。  
 TensorRT核心组成包括模型解析器和运行时模块，分别对应其模型转换和模型推理部署的功能，提供C++和python API，所以TensorRT可通过网络定义表示深度学习模型，也可通过解析器进行加载已训练模型。
 ## 安装方式
-Debian安装，从下载的本地安装包进行TensorRT安装，与容器安装不同。
+Debian安装，从下载的本地安装包进行TensorRT安装。
 ## 环境及版本-安装要求
 1. 查看Ubuntu版本。
 ```
@@ -80,6 +80,7 @@ trtexec: command not found         # 添加trtexe的路径到环境变量文件�
 
 vim ~/.bashrc                            # i 
 export PATH=/usr/src/tensorrt/bin:$PATH   # esc :wq! 
+
 source ~/.bashrc
 ```
 ## 验证安装
