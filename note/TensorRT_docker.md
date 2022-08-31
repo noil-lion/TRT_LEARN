@@ -23,3 +23,7 @@ trtexec --onnx=resnet50_pytorch.onnx --saveEngine=resnet.engin
 3. 添加其他包或扩展
 * 基于此为基镜像，使用docker build 添加自定义，再重定义
 * 修改源代码
+
+
+__nvidia官方镜像docker仓库发行说明:https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/index.html__  
+__nvidia发行版本及运行环境:https://docs.nvidia.com/deeplearning/tensorrt/release-notes/index.html__
