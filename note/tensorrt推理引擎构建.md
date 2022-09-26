@@ -11,7 +11,7 @@ __第三步表明tensorrt转换的模型是与硬件绑定的，当cuda和cudnn�
 1. Tensorrt 接口
 使用训练框架自带的TensorRT 接口，如 TF-TRT、Torch-TRT。
 
-2. trtexec  
+2. trtexec工具  
 示例：
 ```
 def torch2onnx(model_path,onnx_path):

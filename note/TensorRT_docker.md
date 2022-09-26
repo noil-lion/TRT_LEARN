@@ -8,7 +8,7 @@ TensorRT除了可以基于db安装包安装外，nvidia提供了不同版本环�
 1. 拉一个容器
 安装好docker，并注册成为Nvidia DGX用户。
 ```
-docker pull nvcr.io/nvidia/tensorrt:22.07-py3
+docker pull nvcr.io/nvidia/tensorrt:22.04-py3
 ```
 
 2. 运行容器
@@ -17,7 +17,7 @@ docker run --gpus all -it --rm -v local_dir:container_dir nvcr.io/nvidia/tensorr
 docker run --gpus '"device=4"' -it --rm -v /work:/work nvcr.io/nvidia/tensorrt:22.04-py3
 
 # 执行模型转换
-trtexec --onnx=resnet50_pytorch.onnx --saveEngine=resnet.engin
+trtexec --onnx=resnet50_pytorch.onnx --saveEngine=resnet.engin 
 ```
 
 3. 添加其他包或扩展

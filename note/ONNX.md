@@ -3,6 +3,7 @@
 
 ## ONNX
 通常Pytroch模型保存为model.pt，二进制的权重文件，torch支持将.pt转为onnx格式导出，其包含权重值和网络结构信息（数据流向、每层的输入输出...）及辅助信息。
+![var](./pic/tto.png)
 
 ## ONNX的读写接口-Protobuf
 ONNX采用protobuf序列化数据结构协议来存储神经网络的权重信息。  
