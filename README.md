@@ -10,7 +10,7 @@ Triton 可提供高吞吐量推理，以实现 GPU 使用率的最大化。
 __ONNX__
 微软和Facebook提出用来表示深度学习模型的开放格式。
 模型交换格式ONNX,特点是部署时框架兼容，跨平台
-![var](pic/trans.png)
+![var](./note/pic/trans.png)
 
 ##  TensorRT
 只负责模型的推理（inference）过程，一般不用TensorRT来训练模型。
