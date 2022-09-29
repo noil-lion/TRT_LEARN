@@ -95,6 +95,18 @@ $ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway
             --optShapes=INPUT__0:4x1x128x160x112 \
             --maxShapes=INPUT__0:8x1x128x160x112 
 
+$ //静态batchsize的engine生成,以fp16精度。
+$ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway.onnx \
+            --saveEngine=/work/wuzihao/triton/model_repository/airway_trt/1/model_fp16.trt \
+            --explicitBatch  \
+            --fp16 
+
+
+$ //静态batchsize的engine生成,以fp32精度。
+$ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway.onnx \
+            --saveEngine=/work/wuzihao/triton/model_repository/airway_trt/1/model_fp32.trt \
+            --explicitBatch  \
+
 ```
 
 ## 过程保障及结果验证
