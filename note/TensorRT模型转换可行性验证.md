@@ -103,9 +103,10 @@ $ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway
 
 
 $ //静态batchsize的engine生成,以fp32精度。
-$ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway.onnx \
-            --saveEngine=/work/wuzihao/triton/model_repository/airway_trt/1/model_fp32.trt \
+$ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/nodule/nodule.onnx \
+            --saveEngine=/work/wuzihao/ibotModelDeploy/modelTrans/result/nodule/model_fp16.trt \
             --explicitBatch  \
+            --fp16 
 
 ```
 

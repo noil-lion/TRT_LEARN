@@ -30,7 +30,7 @@ Build cuda_11.4.r11.4/compiler.30300941_0
 
 # 上面指令看不到的可以用
 cat /usr/local/cuda/version.txt
-# 还看不到的进目录/usr/local/cuda，vim ~/.bashrc 添加nvcc环境变量
+# 还看不到的进目录，vim ~/.bashrc 添加nvcc环境变量
 ```
 3. cudnn版本查看
 ```
