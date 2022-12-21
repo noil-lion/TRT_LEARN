@@ -80,11 +80,10 @@ $ docker run --gpus '"device=0"' -it --rm -v /work:/work nvcr.io/nvidia/tensorrt
 
 $ 开启--best选项精度可能会得不到保障（fp16+int8混合使用）
 $ //静态batchsize的engine生成。
-$ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway.onnx \
-            --saveEngine=/work/wuzihao/triton/model_repository/airway_trt/1/model.engin \
+$ trtexec   --onnx=/work/wuzihao/TensorRT/TensorRT/TensorRT-8.2.4.2/targets/x86_64-linux-gnu/bin/test/Airway.onnx \
+            --saveEngine=/work/wuzihao/TensorRT/TensorRT/TensorRT-8.2.4.2/targets/x86_64-linux-gnu/bin/test/airway.engin \
             --explicitBatch  \
-            --workspace=4096 \
-            --best 
+            --fp16 
 
 $ //动态batchsize的engine生成。
 $ trtexec   --onnx=/work/wuzihao/ibotModelDeploy/modelTrans/result/airway/airway.onnx \
